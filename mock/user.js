@@ -9,7 +9,8 @@ module.exports = [
             return {
                 errno: 0,
                 data: {
-                    name: Random.cname()
+                    username: Random.title(),
+                    nickname: Random.cname()
                 }
             }
         }
@@ -28,7 +29,10 @@ module.exports = [
         method:'post',
         response() {
             return {
-                errno: 0
+                errno: 0,
+                data: {
+                    token: Random.word(20)
+                }
             }
         }
     },

@@ -42,13 +42,16 @@ module.exports = [
         url: '/api/question',//获取问卷列表
         method: 'get',
         response(ctx) {
+            const {query ={}} = ctx
             const isStar = ctx.url.indexOf('isStar=true') >=0
             const isDeleted = ctx.url.indexOf('isDeleted=true') >=0
+
+            const pageSize = parseInt(query.pageSize) || 10
 
             return {
                 errno: 0,
                 data: {
-                    list: getQuestionList({isDeleted,isStar}),//当前页
+                    list: getQuestionList({isDeleted,isStar,len:pageSize}),//当前页
                     total: 100
                 }
             }
