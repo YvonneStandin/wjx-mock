@@ -12,7 +12,33 @@ module.exports = [
                 errno: 0,
                 data: {
                     id: Random.id(),
-                    title: Random.ctitle()
+                    title: Random.ctitle(),
+                    componentList: [
+                        {
+                            fe_id: Random.id(),
+                            type: 'QuestionTitle',
+                            title: '标题',
+                            props: {
+                                text: '小狗信息调研',level: 1, isCenter: false
+                            }
+                        },
+                        {
+                            fe_id: Random.id(),
+                            type: 'QuestionInput',
+                            title: '输入框1',
+                            props: {
+                                title: '小狗姓名',placeholder: '请输入姓名...'
+                            }
+                        },
+                        {
+                            fe_id: Random.id(),
+                            type: 'QuestionInput',
+                            title: '输入框2',
+                            props: {
+                                title: '小狗年龄',placeholder: '请输入年龄...'
+                            }
+                        }
+                    ]
                 },
             }
         }
