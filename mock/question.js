@@ -19,6 +19,7 @@ module.exports = [
                             type: 'QuestionTitle',
                             title: '标题',
                             isHidden: false,
+                            isLocked: false,
                             props: {
                                 text: '小狗信息调研',level: 1, isCenter: false
                             }
@@ -28,6 +29,7 @@ module.exports = [
                             type: 'QuestionInput',
                             title: '输入框1',
                             isHidden: false,
+                            isLocked: false,
                             props: {
                                 title: '小狗姓名',placeholder: '请输入姓名...'
                             }
@@ -37,6 +39,7 @@ module.exports = [
                             type: 'QuestionInput',
                             title: '输入框2',
                             isHidden: false,
+                            isLocked: false,
                             props: {
                                 title: '小狗年龄',placeholder: '请输入年龄...'
                             }
