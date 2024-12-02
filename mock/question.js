@@ -18,6 +18,7 @@ module.exports = [
                             fe_id: Random.id(),
                             type: 'QuestionTitle',
                             title: '标题',
+                            isHidden: false,
                             props: {
                                 text: '小狗信息调研',level: 1, isCenter: false
                             }
@@ -26,6 +27,7 @@ module.exports = [
                             fe_id: Random.id(),
                             type: 'QuestionInput',
                             title: '输入框1',
+                            isHidden: false,
                             props: {
                                 title: '小狗姓名',placeholder: '请输入姓名...'
                             }
@@ -34,6 +36,7 @@ module.exports = [
                             fe_id: Random.id(),
                             type: 'QuestionInput',
                             title: '输入框2',
+                            isHidden: false,
                             props: {
                                 title: '小狗年龄',placeholder: '请输入年龄...'
                             }
