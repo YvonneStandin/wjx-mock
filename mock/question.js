@@ -16,12 +16,22 @@ module.exports = [
                     componentList: [
                         {
                             fe_id: Random.id(),
+                            type: 'QuestionInfo',
+                            title: '问卷信息',
+                            isHidden: false,
+                            isLocked: false,
+                            props: {
+                                title: '智能宠物产品调研',description:'这是一份关于欧美市场智能宠物产品使用情况的问卷调查。为更好发展智能宠物产品市场规模、扩充主要品类及优化现有产品线，诚邀各宠物家长参与问卷调查，为毛孩子的幸福共同努力！'
+                            }
+                        },
+                        {
+                            fe_id: Random.id(),
                             type: 'QuestionTitle',
                             title: '标题',
                             isHidden: false,
                             isLocked: false,
                             props: {
-                                text: '小狗信息调研',level: 1, isCenter: false
+                                text: '宠物基础信息',level: 1, isCenter: false
                             }
                         },
                         {
@@ -31,7 +41,7 @@ module.exports = [
                             isHidden: false,
                             isLocked: false,
                             props: {
-                                title: '小狗姓名',placeholder: '请输入姓名...'
+                                title: '姓名',placeholder: '请输入姓名...'
                             }
                         },
                         {
@@ -41,7 +51,17 @@ module.exports = [
                             isHidden: false,
                             isLocked: false,
                             props: {
-                                title: '小狗年龄',placeholder: '请输入年龄...'
+                                title: '年龄',placeholder: '请输入年龄...'
+                            }
+                        },
+                        {
+                            fe_id: Random.id(),
+                            type: 'QuestionParagraph',
+                            title: '段落',
+                            isHidden: false,
+                            isLocked: false,
+                            props: {
+                                text: '一行段落...',isCenter: false
                             }
                         }
                     ]
