@@ -13,6 +13,10 @@ module.exports = [
                 data: {
                     id: Random.id(),
                     title: Random.ctitle(),
+                    desc: '问卷描述',
+                    js: '',
+                    css: '',
+                    isPublished: true,
                     componentList: [
                         {
                             fe_id: Random.id(),
@@ -21,7 +25,7 @@ module.exports = [
                             isHidden: false,
                             isLocked: false,
                             props: {
-                                title: '智能宠物产品调研',description:'这是一份关于欧美市场智能宠物产品使用情况的问卷调查。为更好发展智能宠物产品市场规模、扩充主要品类及优化现有产品线，诚邀各宠物家长参与问卷调查，为毛孩子的幸福共同努力！'
+                                title: '智能宠物产品调研',description:'关于欧美市场智能宠物产品使用情况的问卷调查...'
                             }
                         },
                         {
@@ -56,6 +60,16 @@ module.exports = [
                         },
                         {
                             fe_id: Random.id(),
+                            type: 'QuestionTextarea',
+                            title: '文本域1',
+                            isHidden: false,
+                            isLocked: false,
+                            props: {
+                                title: '疫苗情况',placeholder: '请输入疫苗情况...'
+                            }
+                        },
+                        {
+                            fe_id: Random.id(),
                             type: 'QuestionParagraph',
                             title: '段落',
                             isHidden: false,
@@ -63,6 +77,36 @@ module.exports = [
                             props: {
                                 text: '一行段落...',isCenter: false
                             }
+                        },
+                        {
+                            fe_id: Random.id(),
+                            title: '单选框',
+                            type: 'QuestionRadio',
+                            isHidden: false,
+                            isLocked: false,
+                            props: {
+                                title: '单选标题',
+                                options: ['选项1', '选项2', '选项3'],
+                                selectedOption: '',
+                                isVertical: false,
+                            },
+                        },
+                        {
+                            fe_id: 'VPBF-eCKkd59-ugLgoIXy',
+                            title: '多选框',
+                            type: 'QuestionCheckbox',
+                            isHidden: false,
+                            isLocked: false,
+                            props: {
+                                title: '多选标题',
+                                isVertical: false,
+                                optionList: [
+                                    { value: '选项1', isSelected: false },
+                                    { value: '选项2', isSelected: false },
+                                    { value: '选项3', isSelected: false },
+                                ],
+                            },
+    
                         }
                     ]
                 },
