@@ -65,7 +65,7 @@ function getComponentList() {
             isHidden: false,
             isLocked: false,
             props: {
-                text: '一行段落...',isCenter: false
+                text: '请按照实际情况填写以下内容',isCenter: false
             }
         },
         {
@@ -75,8 +75,8 @@ function getComponentList() {
             isHidden: false,
             isLocked: false,
             props: {
-                title: '单选标题',
-                options: ['选项1', '选项2', '选项3'],
+                title: '内驱周期',
+                options: ['1个月', '2个月', '1季度'],
                 selectedOption: '',
                 isVertical: false,
             },
@@ -88,12 +88,12 @@ function getComponentList() {
             isHidden: false,
             isLocked: false,
             props: {
-                title: '多选标题',
+                title: '洗护方式',
                 isVertical: false,
                 optionList: [
-                    { value: '选项1', isSelected: false },
-                    { value: '选项2', isSelected: false },
-                    { value: '选项3', isSelected: false },
+                    { value: '家中洗护', isSelected: false },
+                    { value: '宠物店洗护', isSelected: false },
+                    { value: '不洗护', isSelected: false },
                 ],
             },
 
