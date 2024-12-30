@@ -91,9 +91,9 @@ function getComponentList() {
                 title: '洗护方式',
                 isVertical: false,
                 optionList: [
-                    { value: '家中洗护', isSelected: false },
-                    { value: '宠物店洗护', isSelected: false },
-                    { value: '不洗护', isSelected: false },
+                    { value: '家中洗', isSelected: false },
+                    { value: '宠物店洗', isSelected: false },
+                    { value: '不洗', isSelected: false },
                 ],
             },
 
